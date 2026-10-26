@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #1e293b; background: #f6f8fc; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+.panel-card { min-width: 0; border: 1px solid #e8ecf4; border-radius: 18px; background: white; padding: 20px; box-shadow: 0 4px 18px rgba(15,23,42,.025); }
+.metric-card { min-width: 0; border: 1px solid #e8ecf4; border-radius: 17px; background: white; padding: 20px; box-shadow: 0 4px 18px rgba(15,23,42,.025); }
+.section-title { color: #172033; font-size: 15px; font-weight: 750; letter-spacing: -.02em; }
+.section-subtitle { margin-top: 4px; color: #94a3b8; font-size: 12px; line-height: 1.6; }
+.field-label { display: block; min-width: 0; color: #64748b; font-size: 12px; font-weight: 600; }
+.sidebar-link { display: flex; align-items: center; gap: 12px; width: 100%; margin: 3px 0; border: 0; border-radius: 10px; padding: 11px 13px; background: transparent; color: #64748b; text-align: left; font-size: 13px; font-weight: 600; transition: .18s ease; cursor: pointer; }
+.sidebar-link:hover { background: #f7f6ff; color: #625bf6; }
+.sidebar-link-active { background: #f0efff; color: #625bf6; }
+.upload-dragger.ant-upload-wrapper .ant-upload-drag { border: 1.5px dashed #c9c5ff; border-radius: 14px; background: #fbfaff; padding: 22px 12px; }
+.upload-dragger.ant-upload-wrapper .ant-upload-drag:hover { border-color: #625bf6; }
+.ant-table-wrapper .ant-table { border-radius: 12px; }
+.ant-table-wrapper .ant-table-thead > tr > th { color: #64748b; background: #f8fafc; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.ant-segmented { background: #f3f4f8; }
+@media (max-width: 640px) { .panel-card, .metric-card { padding: 15px; border-radius: 14px; } .ant-picker-range { min-width: 0; } }
